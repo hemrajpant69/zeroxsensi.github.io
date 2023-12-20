@@ -99,7 +99,7 @@ button:hover {
 
 footer {
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     width: 80%;
     max-width: 450px;
     text-align: center;
