@@ -1,0 +1,130 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #000000, #fda085);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.whatsapp-container {
+    border: 2px solid #25D366;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    width: 80%;
+    max-width: 450px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+header-emoji, .floating-emoji, .floating-emoji2, .floating-emoji3, .floating-emoji4 {
+    font-size: 2rem;
+    position: absolute;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.header-emoji {
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.floating-emoji {
+    animation-name: floatAnimation;
+    top: 50px;
+    left: -30px;
+}
+
+.floating-emoji2 {
+    animation-name: floatAnimationReverse;
+    top: 10px;
+    right: -30px;
+}
+
+.floating-emoji3 {
+    animation-name: floatAnimation;
+    bottom: 50px;
+    left: -30px;
+}
+
+.floating-emoji4 {
+    animation-name: floatAnimationReverse;
+    bottom: 10px;
+    right: -30px;
+}
+
+@keyframes floatAnimation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes floatAnimationReverse {
+    0% { transform: translateY(-20px); }
+    50% { transform: translateY(0px); }
+    100% { transform: translateY(-20px); }
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #25D366;
+    border-radius: 5px;
+}
+
+button {
+    background: #25D366;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #128C7E;
+}
+
+.nav-buttons {
+    margin-top: 20px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+    max-width: 450px;
+    text-align: center;
+}
+
+footer p {
+    color: #2209cb;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+
+.footer-links a,
+.footer-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #25D366;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover,
+.footer-icons a:hover {
+    color: #128C7E;
+}
+
+.footer-icons .emoji {
+    font-size: 1.5rem;
+}
