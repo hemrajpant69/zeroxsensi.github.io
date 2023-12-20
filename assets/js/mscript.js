@@ -3,7 +3,7 @@ const userMessage = document.getElementById('userMessage');
 
 sendButton.addEventListener('click', function() {
     const message = userMessage.value;
-    const phoneNumber ="9806400774";
+    const phoneNumber ="+9779806400774";
     
     if (message.trim() !== '') { // Check if message isn't empty
         const encodedMessage = encodeURIComponent(message);
